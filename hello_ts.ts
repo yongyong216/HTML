@@ -52,3 +52,15 @@ interface Object4{
     prop4: number;
 }
 const object4: Object3 & Object4 ={ prop1:'prop1', prop2: 2, prop3:'prop3', prop4: 2  }  // 두개의 속성을 동시에 가지고 있어야한다.
+
+// 4.enum (열거형타입) -선택할 수  있는거 정할 수 있음//
+enum Fruits{
+    APPLE ='사과',
+    BANANA ='바나나',
+    MELON ='메론'
+}
+//const fruit: Fruits = 'a';  
+//const fruit: Fruits = '사과';  
+// 여기에 해당하지 않는것들은 오류가 뜬다. 특정한 녀석을 넣겠다라고 정확히 해줘야함. 
+const fruit: Fruits = Fruits.APPLE;
+console.log(fruit)
